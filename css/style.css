@@ -1,0 +1,183 @@
+:root{
+    --black:#050505;
+    --brown:#5C4033;
+    --royal:#4169E1;
+    --blue:#1A5276;
+    --white:#ffffff;
+}
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Barlow',sans-serif;
+}
+
+/* BODY */
+body{
+    background:linear-gradient(135deg,var(--black),var(--brown),var(--blue));
+    color:var(--white);
+}
+
+/* MAIN FRAME */
+.flyer{
+    width:100%;
+    min-height:100vh;
+    padding:40px;
+    position:relative;
+}
+
+/* BACKGROUND */
+.bg-overlay{
+    position:absolute;
+    inset:0;
+    background:radial-gradient(circle at top right,rgba(65,105,225,.15),transparent 60%);
+}
+
+.grid-pattern{
+    position:absolute;
+    inset:0;
+    background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
+                     linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+    background-size:50px 50px;
+}
+
+/* HEADER */
+.header{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:40px;
+}
+
+.brand{
+    font-size:12px;
+    opacity:.7;
+}
+
+.badge{
+    border:1px solid rgba(255,255,255,.2);
+    padding:6px 12px;
+    font-size:11px;
+}
+
+/* HERO */
+.hero{
+    margin-bottom:40px;
+}
+
+.tag{
+    display:inline-block;
+    background:linear-gradient(90deg,var(--brown),var(--royal));
+    padding:6px 14px;
+    font-size:10px;
+    letter-spacing:2px;
+}
+
+.subtitle{
+    margin-top:10px;
+    opacity:.5;
+}
+
+.title{
+    font-size:70px;
+    font-family:'Bebas Neue',cursive;
+}
+
+.title span{
+    color:var(--royal);
+}
+
+.tagline{
+    opacity:.6;
+    margin-top:10px;
+}
+
+/* SERVICES */
+.services{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+    margin-bottom:40px;
+}
+
+.card{
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(65,105,225,.2);
+    padding:20px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:var(--royal);
+}
+
+.icon{
+    font-size:28px;
+}
+
+/* DETAILS */
+.details h2{
+    margin-bottom:20px;
+}
+
+.item{
+    display:flex;
+    gap:15px;
+    margin-bottom:15px;
+    padding:15px;
+    border-left:3px solid var(--royal);
+    background:rgba(255,255,255,.02);
+}
+
+.item span{
+    font-size:22px;
+    color:rgba(255,255,255,.3);
+}
+
+/* ETHOS */
+.ethos{
+    margin:40px 0;
+    padding:20px;
+    border:1px solid rgba(65,105,225,.3);
+    background:rgba(65,105,225,.05);
+}
+
+/* CONTACT */
+.contact{
+    padding:30px;
+    background:rgba(0,0,0,.3);
+    border-top:2px solid var(--royal);
+}
+
+.contact h2{
+    margin-bottom:20px;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    margin-bottom:10px;
+    padding:12px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.2);
+    color:white;
+}
+
+.contact button{
+    background:linear-gradient(90deg,var(--brown),var(--royal));
+    color:white;
+    padding:12px;
+    border:none;
+    cursor:pointer;
+}
+
+/* FOOTER */
+.footer{
+    display:flex;
+    justify-content:space-between;
+    margin-top:30px;
+    font-size:12px;
+    opacity:.7;
+}
